@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Quiz Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>DOM Manipulation Quiz Demo</h1>
+        <p>
+            Demonstrating createElement(), appendChild(),
+            textContent, innerHTML, getElementById(),
+            querySelector(), Event Listeners and DOM Nodes.
+        </p>
+    </header>
+
+    <div class="score-board">
+        <div>
+            Score:
+            <span id="score">0</span>
+        </div>
+
+        <div>
+            Question:
+            <span id="questionNumber">1</span>
+        </div>
+    </div>
+
+    <div id="quizContainer" class="quiz-card">
+        <!-- Questions appear here -->
+    </div>
+
+    <div class="controls">
+        <button id="nextBtn">Next Question</button>
+        <button id="resetBtn">Restart Quiz</button>
+    </div>
+
+    <div id="domLog" class="dom-log">
+        <h3>Live DOM Operations</h3>
+        <ul id="logList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
